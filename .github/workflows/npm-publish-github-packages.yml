@@ -20,7 +20,6 @@ jobs:
       - run: npm ci
       - run: npm run lint
 
-name: Feature to Develop
 on:
   push:
     branches: [ "develop" ]
@@ -37,4 +36,4 @@ jobs:
           node-version: 16
       - run: npm ci
       - run: npm run lint
-       -run: npm run test
+      - run: npm run test
